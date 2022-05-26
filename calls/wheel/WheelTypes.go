@@ -1,11 +1,18 @@
 package wheel
 
-type Keys[T any] struct {
-	Minions         T `json:"minions"`
-	MinionsPre      T `json:"minions_pre"`
-	MinionsRejected T `json:"minions_rejected"`
-	MinionsDenied   T `json:"minions_denied"`
-	Local           T `json:"local"`
+type WheelCall[T any] struct {
+	Fun    string
+	Kwargs map[string]interface{}
+	result *APIReturnType[WheelResultType[T]]
+}
+
+type APIReturnType[R any] struct {
+	Return []R `json:"return"`
+}
+
+type WheelResultType[T any] struct {
+	Tag  string           `json:"tag"`
+	Data WheelDataType[T] `json:"data"`
 }
 
 type WheelDataType[T any] struct {
@@ -16,11 +23,15 @@ type WheelDataType[T any] struct {
 	Return T      `json:"return"`
 }
 
-type WheelResultType[T any] struct {
-	Tag  string           `json:"tag"`
-	Data WheelDataType[T] `json:"data"`
+type Keys[T any] struct {
+	Minions         T `json:"minions"`
+	MinionsPre      T `json:"minions_pre"`
+	MinionsRejected T `json:"minions_rejected"`
+	MinionsDenied   T `json:"minions_denied"`
+	Local           T `json:"local"`
 }
 
-type APIReturnType[R any] struct {
-	Return []R `json:"return"`
+type KeyGen struct {
+	Pub  string
+	Priv string
 }

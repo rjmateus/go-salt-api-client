@@ -2,13 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/rjmateus/go-salt-api-client/calls/wheel"
 	"github.com/rjmateus/go-salt-api-client/client"
 	"github.com/rjmateus/go-salt-api-client/target"
 	"log"
 )
 
-func main() {
+func main2() {
 
 	clientSalt := client.NewClient("https://m43-server.tf.local:9080",
 		"admin", "328ae1ec5a83f4b6df81dc8392b0b8fa1367c910efd22a6d978c735b97061e3f",
@@ -36,10 +35,4 @@ func main() {
 	}
 	fmt.Printf("decode data: >%s<\n", data)
 
-	keys := wheel.KeyListAllSync(clientSalt)
-
-	fmt.Printf("KEYS data: >%s<\n", keys)
-
-	keyMinion := wheel.KeyFinger("m43-minion-suse.tf.local").CallSync(clientSalt)
-	fmt.Printf("KEY Minion: >%s<\n", keyMinion)
 }

@@ -91,7 +91,7 @@ func (c *SaltClient) Run(clilentType ClientType, fun string, tgt target.SaltTarg
 //call(Call<?> call, Client client, Optional<Target<?>> target,
 //Map<String, Object> custom, TypeToken<R> type, AuthMethod auth)
 
-func (c *SaltClient) Call(call calls.Call, clientType ClientType, tgt *target.SaltTarget) (data interface{}, err error) {
+func (c *SaltClient) Call(call calls.Call, clientType ClientType, tgt *target.SaltTarget) (data []byte, err error) {
 
 	props := make(map[string]interface{})
 	props["username"] = c.Username
@@ -129,10 +129,5 @@ func (c *SaltClient) Call(call calls.Call, clientType ClientType, tgt *target.Sa
 	}
 
 	fmt.Printf("Raw data: >%s<\n", body)
-
-	parser := call.GetParser()
-	if parser != nil {
-		return parser(body), nil
-	}
 	return body, nil
 }
