@@ -6,12 +6,14 @@ import (
 	"log"
 )
 
-func (w WheelCall[T]) CallSync(saltClient client.SaltClient) {
+func (w WheelCall[T]) CallSync(saltClient client.SaltClient) WheelResultType[T] {
 	data, err := saltClient.Call(w, client.WHEEL, nil)
 	if err != nil {
 		log.Printf("error calling %s-> %s", w.Fun, err)
 	}
 	json.Unmarshal(data, w.result)
+	// FIXME check data is present before returning it
+	return w.result.Return[0]
 }
 
 func (w WheelCall[T]) GetPayload() map[string]interface{} {

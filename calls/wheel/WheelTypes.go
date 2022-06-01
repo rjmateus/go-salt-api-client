@@ -35,3 +35,7 @@ type KeyGen struct {
 	Pub  string
 	Priv string
 }
+
+type FileRootListRoot struct {
+	Base []map[string]interface{}
+}

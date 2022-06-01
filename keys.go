@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/rjmateus/go-salt-api-client/calls/modules/calls"
 	"github.com/rjmateus/go-salt-api-client/calls/wheel"
 	"github.com/rjmateus/go-salt-api-client/client"
 )
@@ -22,8 +23,8 @@ func main() {
 	keys := wheel.KeyListAllSync(clientSalt)
 
 	fmt.Printf("KEYS data: >%s<\n", keys)
-	for _, val := range keys.MinionsPre {
-		fmt.Println("accepting %s", val)
+	for _, val := range keys.Data.Return.MinionsPre {
+		fmt.Printf("accepting %s\n", val)
 		//wheel.KeyAcceptSync(clientSalt, val)
 	}
 
@@ -32,5 +33,11 @@ func main() {
 
 	keyMinion := wheel.KeyFingerSync(clientSalt, "m43-minion-suse.tf.local")
 	fmt.Printf("Finger Minion: >%s<\n", keyMinion)
+
+	data := calls.ListMinions(clientSalt)
+	fmt.Printf("MINIONS: >%s<\n", data)
+
+	tt := wheel.FileRootsListEnv(clientSalt, "")
+	fmt.Println(tt)
 
 }
