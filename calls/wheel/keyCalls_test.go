@@ -2,18 +2,20 @@ package wheel
 
 import (
 	"github.com/rjmateus/go-salt-api-client/client"
-	"net/http"
-	"net/http/httptest"
+	"github.com/rjmateus/go-salt-api-client/testUtils"
 	"testing"
 )
 
-// TestHelloName calls greetings.Hello with a name, checking
-// for a valid return value.
-func TestKeyListAllSync(t *testing.T) {
-	httpServer := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		w.WriteHeader(http.StatusOK)
-		w.Write([]byte(`{"id": 1, "name": "kyle", "description": "novice gopher"}`))
-	}))
-	client.NewClient(httpServer.URL, "", "", "")
+func TestKeyListAllSyncOK(t *testing.T) {
+	httpServer := testUtils.GetHttpServer()
+	htppClient := client.NewClient(httpServer.URL, "", "", "")
 
+	call := KeyListAllSync()
+	if call.Fun != "key.list_all" {
+		t.Errorf("wrong fun name. got: %s, want: 5%s", call.Fun, "key.list_all")
+	}
+	data := call.CallSync(htppClient)
+	if len(data.Data.Return.Local) != 2 || len(data.Data.Return.MinionsPre) != 1 || len(data.Data.Return.MinionsRejected) != 1 || len(data.Data.Return.MinionsRejected) != 1 {
+		t.Errorf("data not de-serialized")
+	}
 }

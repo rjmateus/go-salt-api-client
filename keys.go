@@ -20,7 +20,7 @@ func main() {
 	args := make([]interface{}, 0)
 	args = append(args, "ls")
 
-	keys := wheel.KeyListAllSync(clientSalt)
+	keys := wheel.KeyListAllSync().CallSync(clientSalt)
 
 	fmt.Printf("KEYS data: >%s<\n", keys)
 	for _, val := range keys.Data.Return.MinionsPre {
@@ -28,16 +28,16 @@ func main() {
 		//wheel.KeyAcceptSync(clientSalt, val)
 	}
 
-	wheel.KeyGenSync(clientSalt, "my_id1")
-	wheel.KeyGenAcceptSync(clientSalt, "my-id-2", true)
+	wheel.KeyGenSync("my_id1").CallSync(clientSalt)
+	wheel.KeyGenAcceptSync("my-id-2", true).CallSync(clientSalt)
 
-	keyMinion := wheel.KeyFingerSync(clientSalt, "m43-minion-suse.tf.local")
+	keyMinion := wheel.KeyFingerSync("m43-minion-suse.tf.local").CallSync(clientSalt)
 	fmt.Printf("Finger Minion: >%s<\n", keyMinion)
 
 	data := calls.ListMinions(clientSalt)
 	fmt.Printf("MINIONS: >%s<\n", data)
 
-	tt := wheel.FileRootsListEnv(clientSalt, "")
+	tt := wheel.FileRootsListEnv("").CallSync(clientSalt)
 	fmt.Println(tt)
 
 }

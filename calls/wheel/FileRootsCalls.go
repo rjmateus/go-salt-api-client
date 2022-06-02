@@ -1,19 +1,17 @@
 package wheel
 
-import "github.com/rjmateus/go-salt-api-client/client"
-
-func FileRootsListRoot(saltClient client.SaltClient) WheelResultType[FileRootListRoot] {
+func FileRootsListRoot() WheelCall[FileRootListRoot] {
 	var result = &APIReturnType[WheelResultType[FileRootListRoot]]{}
 	call := WheelCall[FileRootListRoot]{"file_roots.list_roots", nil, result}
-	return call.CallSync(saltClient)
+	return call
 }
 
-func FileRootsListEnv(saltClient client.SaltClient, saltenv string) WheelResultType[FileRootListRoot] {
+func FileRootsListEnv(saltenv string) WheelCall[FileRootListRoot] {
 	var result = &APIReturnType[WheelResultType[FileRootListRoot]]{}
 	args := make(map[string]interface{})
 	if len(saltenv) > 0 {
 		args[saltenv] = saltenv
 	}
 	call := WheelCall[FileRootListRoot]{"file_roots.list_env", args, result}
-	return call.CallSync(saltClient)
+	return call
 }

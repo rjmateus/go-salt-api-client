@@ -1,0 +1,28 @@
+{
+  "return": [
+    {
+      "tag": "salt/wheel/20220601143836643248",
+      "data": {
+        "fun": "wheel.key.list_all",
+        "jid": "20220601143836643248",
+        "tag": "salt/wheel/20220601143836643248",
+        "user": "admin",
+        "_stamp": "2022-06-01T14:38:36.744246",
+        "return": {
+          "minions": [
+            "minion1.tf.local",
+            "minion2.tf.local"
+          ],
+          "minions_pre": ["pre1.tf.local"],
+          "minions_rejected": ["rejected1.tf.local"],
+          "minions_denied": ["denied1.tf.local"],
+          "local": [
+            "master.pem",
+            "master.pub"
+          ]
+        },
+        "success": true
+      }
+    }
+  ]
+}
