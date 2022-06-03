@@ -6,7 +6,7 @@ const (
 	LOCAL        ClientType = "local"
 	LOCAL_ASYNC             = "local_async"
 	LOCAL_BATCH             = "local_batch"
-	RUNNE                   = "runner"
+	RUNNER                  = "runner"
 	RUNNER_ASYNC            = "runner_async"
 	SSH                     = "ssh"
 	WHEEL                   = "wheel"

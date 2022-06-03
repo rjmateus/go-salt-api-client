@@ -1,0 +1,3209 @@
+{
+  "return": [
+    {
+      "outputter": "highstate",
+      "data": {
+        "m42-min-rocky8o.tf.local": {
+          "saltutil_|-sync_grains_|-sync_grains_|-sync_grains": {
+            "name": "sync_grains",
+            "changes": {},
+            "result": true,
+            "comment": "No updates to sync",
+            "__sls__": "util.syncgrains",
+            "__run_num__": 0,
+            "start_time": "15:55:51.323639",
+            "duration": 552.284,
+            "__id__": "sync_grains"
+          },
+          "saltutil_|-sync_states_|-sync_states_|-sync_states": {
+            "name": "sync_states",
+            "changes": {},
+            "result": true,
+            "comment": "No updates to sync",
+            "__sls__": "util.syncstates",
+            "__run_num__": 1,
+            "start_time": "15:55:51.876182",
+            "duration": 85.587,
+            "__id__": "sync_states"
+          },
+          "saltutil_|-sync_modules_|-sync_modules_|-sync_modules": {
+            "name": "sync_modules",
+            "changes": {},
+            "result": true,
+            "comment": "No updates to sync",
+            "__sls__": "util.syncmodules",
+            "__run_num__": 2,
+            "start_time": "15:55:51.961925",
+            "duration": 129.547,
+            "__id__": "sync_modules"
+          },
+          "mgrcompat_|-packages_|-pkg.info_installed_|-module_run": {
+            "name": "pkg.info_installed",
+            "changes": {
+              "ret": {
+                "crypto-policies": [
+                  {
+                    "arch": "noarch",
+                    "version": "20211116",
+                    "release": "1.gitae470d6.el8",
+                    "install_date_time_t": 1652642994,
+                    "edition": "20211116-1.gitae470d6.el8"
+                  }
+                ],
+                "publicsuffix-list-dafsa": [
+                  {
+                    "arch": "noarch",
+                    "version": "20180723",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652642996,
+                    "edition": "20180723-1.el8"
+                  }
+                ],
+                "iputils": [
+                  {
+                    "arch": "x86_64",
+                    "version": "20180629",
+                    "release": "9.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "20180629-9.el8"
+                  }
+                ],
+                "python3-salt": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3004",
+                    "release": "15.2.uyuni",
+                    "install_date_time_t": 1654265384,
+                    "edition": "3004-15.2.uyuni"
+                  }
+                ],
+                "salt-minion": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3004",
+                    "release": "15.2.uyuni",
+                    "install_date_time_t": 1654265384,
+                    "edition": "3004-15.2.uyuni"
+                  }
+                ],
+                "salt": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3004",
+                    "release": "15.2.uyuni",
+                    "install_date_time_t": 1654265382,
+                    "edition": "3004-15.2.uyuni"
+                  }
+                ],
+                "venv-salt-minion": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3004",
+                    "release": "3.4.uyuni",
+                    "install_date_time_t": 1654265505,
+                    "edition": "3004-3.4.uyuni"
+                  }
+                ],
+                "tzdata": [
+                  {
+                    "arch": "noarch",
+                    "version": "2022a",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652642995,
+                    "edition": "2022a-1.el8"
+                  }
+                ],
+                "ca-certificates": [
+                  {
+                    "arch": "noarch",
+                    "version": "2021.2.50",
+                    "release": "80.0.el8_4",
+                    "install_date_time_t": 1652643008,
+                    "edition": "2021.2.50-80.0.el8_4"
+                  }
+                ],
+                "python3-pytz": [
+                  {
+                    "arch": "noarch",
+                    "version": "2017.2",
+                    "release": "9.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "2017.2-9.el8"
+                  }
+                ],
+                "cockpit-ws": [
+                  {
+                    "arch": "x86_64",
+                    "version": "264.1",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643054,
+                    "edition": "264.1-1.el8"
+                  }
+                ],
+                "cockpit-system": [
+                  {
+                    "arch": "noarch",
+                    "version": "264.1",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643053,
+                    "edition": "264.1-1.el8"
+                  }
+                ],
+                "cockpit-bridge": [
+                  {
+                    "arch": "x86_64",
+                    "version": "264.1",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643051,
+                    "edition": "264.1-1.el8"
+                  }
+                ],
+                "systemd-pam": [
+                  {
+                    "arch": "x86_64",
+                    "version": "239",
+                    "release": "58.el8",
+                    "install_date_time_t": 1652643020,
+                    "edition": "239-58.el8"
+                  }
+                ],
+                "systemd": [
+                  {
+                    "arch": "x86_64",
+                    "version": "239",
+                    "release": "58.el8",
+                    "install_date_time_t": 1652643021,
+                    "edition": "239-58.el8"
+                  }
+                ],
+                "systemd-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "239",
+                    "release": "58.el8",
+                    "install_date_time_t": 1652643010,
+                    "edition": "239-58.el8"
+                  }
+                ],
+                "systemd-udev": [
+                  {
+                    "arch": "x86_64",
+                    "version": "239",
+                    "release": "58.el8",
+                    "install_date_time_t": 1652643021,
+                    "edition": "239-58.el8"
+                  }
+                ],
+                "dracut": [
+                  {
+                    "arch": "x86_64",
+                    "version": "049",
+                    "release": "201.git20220131.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "049-201.git20220131.el8"
+                  }
+                ],
+                "dracut-network": [
+                  {
+                    "arch": "x86_64",
+                    "version": "049",
+                    "release": "201.git20220131.el8",
+                    "install_date_time_t": 1652643052,
+                    "edition": "049-201.git20220131.el8"
+                  }
+                ],
+                "dracut-squash": [
+                  {
+                    "arch": "x86_64",
+                    "version": "049",
+                    "release": "201.git20220131.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "049-201.git20220131.el8"
+                  }
+                ],
+                "dracut-config-generic": [
+                  {
+                    "arch": "x86_64",
+                    "version": "049",
+                    "release": "201.git20220131.el8",
+                    "install_date_time_t": 1652643054,
+                    "edition": "049-201.git20220131.el8"
+                  }
+                ],
+                "python3-setuptools-wheel": [
+                  {
+                    "arch": "noarch",
+                    "version": "39.2.0",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652642995,
+                    "edition": "39.2.0-6.el8"
+                  }
+                ],
+                "platform-python-setuptools": [
+                  {
+                    "arch": "noarch",
+                    "version": "39.2.0",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643010,
+                    "edition": "39.2.0-6.el8"
+                  }
+                ],
+                "bind-export-libs": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "32",
+                    "version": "9.11.36",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643023,
+                    "edition": "32:9.11.36-3.el8"
+                  }
+                ],
+                "kmod": [
+                  {
+                    "arch": "x86_64",
+                    "version": "25",
+                    "release": "19.el8",
+                    "install_date_time_t": 1652643010,
+                    "edition": "25-19.el8"
+                  }
+                ],
+                "kmod-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "25",
+                    "release": "19.el8",
+                    "install_date_time_t": 1652643010,
+                    "edition": "25-19.el8"
+                  }
+                ],
+                "psmisc": [
+                  {
+                    "arch": "x86_64",
+                    "version": "23.1",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643024,
+                    "edition": "23.1-5.el8"
+                  }
+                ],
+                "cloud-init": [
+                  {
+                    "arch": "noarch",
+                    "version": "21.1",
+                    "release": "15.el8",
+                    "install_date_time_t": 1652643053,
+                    "edition": "21.1-15.el8"
+                  }
+                ],
+                "python3-zmq": [
+                  {
+                    "arch": "x86_64",
+                    "version": "17.0.0",
+                    "release": "4.7.uyuni",
+                    "install_date_time_t": 1654265335,
+                    "edition": "17.0.0-4.7.uyuni"
+                  }
+                ],
+                "qemu-guest-agent": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "15",
+                    "version": "6.2.0",
+                    "release": "11.module+el8.6.0+847+b490afdd",
+                    "install_date_time_t": 1652643055,
+                    "edition": "15:6.2.0-11.module+el8.6.0+847+b490afdd"
+                  }
+                ],
+                "dhcp-client": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "12",
+                    "version": "4.3.6",
+                    "release": "47.el8",
+                    "install_date_time_t": 1652643052,
+                    "edition": "12:4.3.6-47.el8"
+                  }
+                ],
+                "dhcp-common": [
+                  {
+                    "arch": "noarch",
+                    "epoch": "12",
+                    "version": "4.3.6",
+                    "release": "47.el8",
+                    "install_date_time_t": 1652643052,
+                    "edition": "12:4.3.6-47.el8"
+                  }
+                ],
+                "dhcp-libs": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "12",
+                    "version": "4.3.6",
+                    "release": "47.el8",
+                    "install_date_time_t": 1652643018,
+                    "edition": "12:4.3.6-47.el8"
+                  }
+                ],
+                "basesystem": [
+                  {
+                    "arch": "noarch",
+                    "version": "11",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652642996,
+                    "edition": "11-5.el8"
+                  }
+                ],
+                "pcre2": [
+                  {
+                    "arch": "x86_64",
+                    "version": "10.32",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652642996,
+                    "edition": "10.32-2.el8"
+                  }
+                ],
+                "python3-pip-wheel": [
+                  {
+                    "arch": "noarch",
+                    "version": "9.0.3",
+                    "release": "22.el8.rocky.0",
+                    "install_date_time_t": 1652642995,
+                    "edition": "9.0.3-22.el8.rocky.0"
+                  }
+                ],
+                "device-mapper": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "8",
+                    "version": "1.02.181",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643020,
+                    "edition": "8:1.02.181-3.el8"
+                  }
+                ],
+                "device-mapper-libs": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "8",
+                    "version": "1.02.181",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643020,
+                    "edition": "8:1.02.181-3.el8"
+                  }
+                ],
+                "pcre": [
+                  {
+                    "arch": "x86_64",
+                    "version": "8.42",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "8.42-6.el8"
+                  }
+                ],
+                "coreutils": [
+                  {
+                    "arch": "x86_64",
+                    "version": "8.30",
+                    "release": "12.el8",
+                    "install_date_time_t": 1652643008,
+                    "edition": "8.30-12.el8"
+                  }
+                ],
+                "coreutils-common": [
+                  {
+                    "arch": "x86_64",
+                    "version": "8.30",
+                    "release": "12.el8",
+                    "install_date_time_t": 1652643006,
+                    "edition": "8.30-12.el8"
+                  }
+                ],
+                "rocky-repos": [
+                  {
+                    "arch": "noarch",
+                    "version": "8.6",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652642995,
+                    "edition": "8.6-2.el8"
+                  }
+                ],
+                "rocky-gpg-keys": [
+                  {
+                    "arch": "noarch",
+                    "version": "8.6",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652642995,
+                    "edition": "8.6-2.el8"
+                  }
+                ],
+                "rocky-release": [
+                  {
+                    "arch": "noarch",
+                    "version": "8.6",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652642995,
+                    "edition": "8.6-2.el8"
+                  }
+                ],
+                "libgomp": [
+                  {
+                    "arch": "x86_64",
+                    "version": "8.5.0",
+                    "release": "10.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "8.5.0-10.el8"
+                  }
+                ],
+                "libstdc++": [
+                  {
+                    "arch": "x86_64",
+                    "version": "8.5.0",
+                    "release": "10.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "8.5.0-10.el8"
+                  }
+                ],
+                "libgcc": [
+                  {
+                    "arch": "x86_64",
+                    "version": "8.5.0",
+                    "release": "10.el8",
+                    "install_date_time_t": 1652642994,
+                    "edition": "8.5.0-10.el8"
+                  }
+                ],
+                "rootfiles": [
+                  {
+                    "arch": "noarch",
+                    "version": "8.1",
+                    "release": "22.el8",
+                    "install_date_time_t": 1652643055,
+                    "edition": "8.1-22.el8"
+                  }
+                ],
+                "openssh-clients": [
+                  {
+                    "arch": "x86_64",
+                    "version": "8.0p1",
+                    "release": "13.el8",
+                    "install_date_time_t": 1652643055,
+                    "edition": "8.0p1-13.el8"
+                  }
+                ],
+                "openssh-server": [
+                  {
+                    "arch": "x86_64",
+                    "version": "8.0p1",
+                    "release": "13.el8",
+                    "install_date_time_t": 1652643055,
+                    "edition": "8.0p1-13.el8"
+                  }
+                ],
+                "openssh": [
+                  {
+                    "arch": "x86_64",
+                    "version": "8.0p1",
+                    "release": "13.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "8.0p1-13.el8"
+                  }
+                ],
+                "curl": [
+                  {
+                    "arch": "x86_64",
+                    "version": "7.61.1",
+                    "release": "22.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "7.61.1-22.el8"
+                  }
+                ],
+                "libcurl": [
+                  {
+                    "arch": "x86_64",
+                    "version": "7.61.1",
+                    "release": "22.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "7.61.1-22.el8"
+                  }
+                ],
+                "readline": [
+                  {
+                    "arch": "x86_64",
+                    "version": "7.0",
+                    "release": "10.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "7.0-10.el8"
+                  }
+                ],
+                "rng-tools": [
+                  {
+                    "arch": "x86_64",
+                    "version": "6.14",
+                    "release": "4.git.b2b7934e.el8",
+                    "install_date_time_t": 1652643054,
+                    "edition": "6.14-4.git.b2b7934e.el8"
+                  }
+                ],
+                "info": [
+                  {
+                    "arch": "x86_64",
+                    "version": "6.5",
+                    "release": "7.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "6.5-7.el8"
+                  }
+                ],
+                "ncurses-base": [
+                  {
+                    "arch": "noarch",
+                    "version": "6.1",
+                    "release": "9.20180224.el8",
+                    "install_date_time_t": 1652642996,
+                    "edition": "6.1-9.20180224.el8"
+                  }
+                ],
+                "ncurses": [
+                  {
+                    "arch": "x86_64",
+                    "version": "6.1",
+                    "release": "9.20180224.el8",
+                    "install_date_time_t": 1652643008,
+                    "edition": "6.1-9.20180224.el8"
+                  }
+                ],
+                "ncurses-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "6.1",
+                    "release": "9.20180224.el8",
+                    "install_date_time_t": 1652642996,
+                    "edition": "6.1-9.20180224.el8"
+                  }
+                ],
+                "file": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.33",
+                    "release": "20.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "5.33-20.el8"
+                  }
+                ],
+                "file-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.33",
+                    "release": "20.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "5.33-20.el8"
+                  }
+                ],
+                "iproute": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.15.0",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643024,
+                    "edition": "5.15.0-4.el8"
+                  }
+                ],
+                "python3-psutil": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.4.3~susemanager",
+                    "release": "7.6.uyuni",
+                    "install_date_time_t": 1654265335,
+                    "edition": "5.4.3~susemanager-7.6.uyuni"
+                  }
+                ],
+                "libdb-utils": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.3.28",
+                    "release": "42.el8_4",
+                    "install_date_time_t": 1652643019,
+                    "edition": "5.3.28-42.el8_4"
+                  }
+                ],
+                "libdb": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.3.28",
+                    "release": "42.el8_4",
+                    "install_date_time_t": 1652643009,
+                    "edition": "5.3.28-42.el8_4"
+                  }
+                ],
+                "lua-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.3.4",
+                    "release": "12.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "5.3.4-12.el8"
+                  }
+                ],
+                "openpgm": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.2.122",
+                    "release": "16.6.uyuni",
+                    "install_date_time_t": 1654265335,
+                    "edition": "5.2.122-16.6.uyuni"
+                  }
+                ],
+                "xz": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.2.4",
+                    "release": "3.el8.1",
+                    "install_date_time_t": 1652643005,
+                    "edition": "5.2.4-3.el8.1"
+                  }
+                ],
+                "xz-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.2.4",
+                    "release": "3.el8.1",
+                    "install_date_time_t": 1652643001,
+                    "edition": "5.2.4-3.el8.1"
+                  }
+                ],
+                "python3-configobj": [
+                  {
+                    "arch": "noarch",
+                    "version": "5.0.6",
+                    "release": "11.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "5.0.6-11.el8"
+                  }
+                ],
+                "xfsprogs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "5.0.0",
+                    "release": "10.el8",
+                    "install_date_time_t": 1652643023,
+                    "edition": "5.0.0-10.el8"
+                  }
+                ],
+                "kernel": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.18.0",
+                    "release": "372.9.1.el8",
+                    "install_date_time_t": 1652643054,
+                    "edition": "4.18.0-372.9.1.el8"
+                  }
+                ],
+                "kernel-modules": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.18.0",
+                    "release": "372.9.1.el8",
+                    "install_date_time_t": 1652643045,
+                    "edition": "4.18.0-372.9.1.el8"
+                  }
+                ],
+                "kernel-core": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.18.0",
+                    "release": "372.9.1.el8",
+                    "install_date_time_t": 1652643043,
+                    "edition": "4.18.0-372.9.1.el8"
+                  }
+                ],
+                "rpm-build-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.14.3",
+                    "release": "23.el8",
+                    "install_date_time_t": 1652643051,
+                    "edition": "4.14.3-23.el8"
+                  }
+                ],
+                "rpm-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.14.3",
+                    "release": "23.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "4.14.3-23.el8"
+                  }
+                ],
+                "python3-rpm": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.14.3",
+                    "release": "23.el8",
+                    "install_date_time_t": 1652643051,
+                    "edition": "4.14.3-23.el8"
+                  }
+                ],
+                "rpm": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.14.3",
+                    "release": "23.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "4.14.3-23.el8"
+                  }
+                ],
+                "libtasn1": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.13",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "4.13-3.el8"
+                  }
+                ],
+                "dnf": [
+                  {
+                    "arch": "noarch",
+                    "version": "4.7.0",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643052,
+                    "edition": "4.7.0-8.el8"
+                  }
+                ],
+                "dnf-data": [
+                  {
+                    "arch": "noarch",
+                    "version": "4.7.0",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643052,
+                    "edition": "4.7.0-8.el8"
+                  }
+                ],
+                "python3-dnf": [
+                  {
+                    "arch": "noarch",
+                    "version": "4.7.0",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643052,
+                    "edition": "4.7.0-8.el8"
+                  }
+                ],
+                "yum": [
+                  {
+                    "arch": "noarch",
+                    "version": "4.7.0",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643054,
+                    "edition": "4.7.0-8.el8"
+                  }
+                ],
+                "sed": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.5",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "4.5-5.el8"
+                  }
+                ],
+                "bash": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.4.20",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643001,
+                    "edition": "4.4.20-3.el8"
+                  }
+                ],
+                "python3-setools": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.3.0",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "4.3.0-3.el8"
+                  }
+                ],
+                "squashfs-tools": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.3",
+                    "release": "20.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "4.3-20.el8"
+                  }
+                ],
+                "gawk": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.2.1",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643008,
+                    "edition": "4.2.1-4.el8"
+                  }
+                ],
+                "sos": [
+                  {
+                    "arch": "noarch",
+                    "version": "4.2",
+                    "release": "15.el8",
+                    "install_date_time_t": 1652643017,
+                    "edition": "4.2-15.el8"
+                  }
+                ],
+                "zeromq": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.1.6",
+                    "release": "11.6.uyuni",
+                    "install_date_time_t": 1654265335,
+                    "edition": "4.1.6-11.6.uyuni"
+                  }
+                ],
+                "libxcrypt": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.1.1",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "4.1.1-6.el8"
+                  }
+                ],
+                "chrony": [
+                  {
+                    "arch": "x86_64",
+                    "version": "4.1",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643055,
+                    "edition": "4.1-1.el8"
+                  }
+                ],
+                "yum-utils": [
+                  {
+                    "arch": "noarch",
+                    "version": "4.0.21",
+                    "release": "11.el8",
+                    "install_date_time_t": 1652643054,
+                    "edition": "4.0.21-11.el8"
+                  }
+                ],
+                "dnf-plugins-core": [
+                  {
+                    "arch": "noarch",
+                    "version": "4.0.21",
+                    "release": "11.el8",
+                    "install_date_time_t": 1652643052,
+                    "edition": "4.0.21-11.el8"
+                  }
+                ],
+                "python3-dnf-plugins-core": [
+                  {
+                    "arch": "noarch",
+                    "version": "4.0.21",
+                    "release": "11.el8",
+                    "install_date_time_t": 1652643052,
+                    "edition": "4.0.21-11.el8"
+                  }
+                ],
+                "gsettings-desktop-schemas": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.32.0",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643018,
+                    "edition": "3.32.0-6.el8"
+                  }
+                ],
+                "sqlite-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.26.0",
+                    "release": "15.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "3.26.0-15.el8"
+                  }
+                ],
+                "logrotate": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.14.0",
+                    "release": "4.el8",
+                    "install_date_time_t": 1654265334,
+                    "edition": "3.14.0-4.el8"
+                  }
+                ],
+                "python3-pyyaml": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.12",
+                    "release": "12.el8",
+                    "install_date_time_t": 1652643013,
+                    "edition": "3.12-12.el8"
+                  }
+                ],
+                "python3-ply": [
+                  {
+                    "arch": "noarch",
+                    "version": "3.9",
+                    "release": "9.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "3.9-9.el8"
+                  }
+                ],
+                "filesystem": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.8",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652642996,
+                    "edition": "3.8-6.el8"
+                  }
+                ],
+                "gnutls": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.6.16",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "3.6.16-4.el8"
+                  }
+                ],
+                "platform-python": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.6.8",
+                    "release": "45.el8.rocky.0",
+                    "install_date_time_t": 1652643010,
+                    "edition": "3.6.8-45.el8.rocky.0"
+                  }
+                ],
+                "python3-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.6.8",
+                    "release": "45.el8.rocky.0",
+                    "install_date_time_t": 1652643012,
+                    "edition": "3.6.8-45.el8.rocky.0"
+                  }
+                ],
+                "diffutils": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.6",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "3.6-6.el8"
+                  }
+                ],
+                "nettle": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.4.1",
+                    "release": "7.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "3.4.1-7.el8"
+                  }
+                ],
+                "procps-ng": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.3.15",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643010,
+                    "edition": "3.3.15-6.el8"
+                  }
+                ],
+                "libarchive": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.3.3",
+                    "release": "3.el8_5",
+                    "install_date_time_t": 1652643023,
+                    "edition": "3.3.3-3.el8_5"
+                  }
+                ],
+                "python3-cryptography": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.2.1",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "3.2.1-5.el8"
+                  }
+                ],
+                "mpfr": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.1.6",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "3.1.6-1.el8"
+                  }
+                ],
+                "rsync": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.1.3",
+                    "release": "14.el8",
+                    "install_date_time_t": 1652643055,
+                    "edition": "3.1.3-14.el8"
+                  }
+                ],
+                "python3-pyserial": [
+                  {
+                    "arch": "noarch",
+                    "version": "3.1.1",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "3.1.1-8.el8"
+                  }
+                ],
+                "libffi": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.1",
+                    "release": "23.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "3.1-23.el8"
+                  }
+                ],
+                "libedit": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.1",
+                    "release": "23.20170329cvs.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "3.1-23.20170329cvs.el8"
+                  }
+                ],
+                "grep": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.1",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "3.1-6.el8"
+                  }
+                ],
+                "python3-audit": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.0.7",
+                    "release": "2.el8.2",
+                    "install_date_time_t": 1652643016,
+                    "edition": "3.0.7-2.el8.2"
+                  }
+                ],
+                "audit-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "3.0.7",
+                    "release": "2.el8.2",
+                    "install_date_time_t": 1652643003,
+                    "edition": "3.0.7-2.el8.2"
+                  }
+                ],
+                "python3-chardet": [
+                  {
+                    "arch": "noarch",
+                    "version": "3.0.4",
+                    "release": "7.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "3.0.4-7.el8"
+                  }
+                ],
+                "ethtool": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "2",
+                    "version": "5.13",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "2:5.13-1.el8"
+                  }
+                ],
+                "shadow-utils": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "2",
+                    "version": "4.6",
+                    "release": "16.el8",
+                    "install_date_time_t": 1652643009,
+                    "edition": "2:4.6-16.el8"
+                  }
+                ],
+                "tar": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "2",
+                    "version": "1.30",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643055,
+                    "edition": "2:1.30-5.el8"
+                  }
+                ],
+                "libpng": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "2",
+                    "version": "1.6.34",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643006,
+                    "edition": "2:1.6.34-5.el8"
+                  }
+                ],
+                "glib2": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.56.4",
+                    "release": "158.el8",
+                    "install_date_time_t": 1652643009,
+                    "edition": "2.56.4-158.el8"
+                  }
+                ],
+                "glib-networking": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.56.1",
+                    "release": "1.1.el8",
+                    "install_date_time_t": 1652643019,
+                    "edition": "2.56.1-1.1.el8"
+                  }
+                ],
+                "libcap": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.48",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "2.48-2.el8"
+                  }
+                ],
+                "libblkid": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.32.1",
+                    "release": "35.el8",
+                    "install_date_time_t": 1652643009,
+                    "edition": "2.32.1-35.el8"
+                  }
+                ],
+                "libsmartcols": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.32.1",
+                    "release": "35.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "2.32.1-35.el8"
+                  }
+                ],
+                "util-linux": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.32.1",
+                    "release": "35.el8",
+                    "install_date_time_t": 1652643020,
+                    "edition": "2.32.1-35.el8"
+                  }
+                ],
+                "libmount": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.32.1",
+                    "release": "35.el8",
+                    "install_date_time_t": 1652643009,
+                    "edition": "2.32.1-35.el8"
+                  }
+                ],
+                "libuuid": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.32.1",
+                    "release": "35.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "2.32.1-35.el8"
+                  }
+                ],
+                "libfdisk": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.32.1",
+                    "release": "35.el8",
+                    "install_date_time_t": 1652643019,
+                    "edition": "2.32.1-35.el8"
+                  }
+                ],
+                "glibc": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.28",
+                    "release": "189.1.el8",
+                    "install_date_time_t": 1652643001,
+                    "edition": "2.28-189.1.el8"
+                  }
+                ],
+                "glibc-all-langpacks": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.28",
+                    "release": "189.1.el8",
+                    "install_date_time_t": 1652643000,
+                    "edition": "2.28-189.1.el8"
+                  }
+                ],
+                "glibc-common": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.28",
+                    "release": "189.1.el8",
+                    "install_date_time_t": 1652643001,
+                    "edition": "2.28-189.1.el8"
+                  }
+                ],
+                "which": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.21",
+                    "release": "17.el8",
+                    "install_date_time_t": 1652643010,
+                    "edition": "2.21-17.el8"
+                  }
+                ],
+                "python3-requests": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.20.0",
+                    "release": "2.1.el8_1",
+                    "install_date_time_t": 1652643016,
+                    "edition": "2.20.0-2.1.el8_1"
+                  }
+                ],
+                "python3-pycparser": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.14",
+                    "release": "14.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "2.14-14.el8"
+                  }
+                ],
+                "jansson": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.14",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "2.14-1.el8"
+                  }
+                ],
+                "libmodulemd": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.13.0",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "2.13.0-1.el8"
+                  }
+                ],
+                "setup": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.12.2",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652642995,
+                    "edition": "2.12.2-6.el8"
+                  }
+                ],
+                "cpio": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.12",
+                    "release": "11.el8",
+                    "install_date_time_t": 1652643007,
+                    "edition": "2.12-11.el8"
+                  }
+                ],
+                "libsigsegv": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.11",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643008,
+                    "edition": "2.11-5.el8"
+                  }
+                ],
+                "python3-jinja2": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.10.1",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643015,
+                    "edition": "2.10.1-3.el8"
+                  }
+                ],
+                "fuse-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9.7",
+                    "release": "15.el8",
+                    "install_date_time_t": 1652643007,
+                    "edition": "2.9.7-15.el8"
+                  }
+                ],
+                "python3-libxml2": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9.7",
+                    "release": "13.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "2.9.7-13.el8"
+                  }
+                ],
+                "libxml2": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9.7",
+                    "release": "13.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "2.9.7-13.el8"
+                  }
+                ],
+                "cracklib-dicts": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9.6",
+                    "release": "15.el8",
+                    "install_date_time_t": 1652643013,
+                    "edition": "2.9.6-15.el8"
+                  }
+                ],
+                "cracklib": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9.6",
+                    "release": "15.el8",
+                    "install_date_time_t": 1652643013,
+                    "edition": "2.9.6-15.el8"
+                  }
+                ],
+                "libreport-filesystem": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9.5",
+                    "release": "15.el8.rocky.6.3",
+                    "install_date_time_t": 1652643051,
+                    "edition": "2.9.5-15.el8.rocky.6.3"
+                  }
+                ],
+                "freetype": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9.1",
+                    "release": "4.el8_3.1",
+                    "install_date_time_t": 1652643006,
+                    "edition": "2.9.1-4.el8_3.1"
+                  }
+                ],
+                "policycoreutils-python-utils": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.9",
+                    "release": "19.el8",
+                    "install_date_time_t": 1654265500,
+                    "edition": "2.9-19.el8"
+                  }
+                ],
+                "python3-policycoreutils": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.9",
+                    "release": "19.el8",
+                    "install_date_time_t": 1652643050,
+                    "edition": "2.9-19.el8"
+                  }
+                ],
+                "policycoreutils": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9",
+                    "release": "19.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "2.9-19.el8"
+                  }
+                ],
+                "libsemanage": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "2.9-8.el8"
+                  }
+                ],
+                "python3-libsemanage": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "2.9-8.el8"
+                  }
+                ],
+                "libselinux": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652642996,
+                    "edition": "2.9-5.el8"
+                  }
+                ],
+                "python3-libselinux": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643013,
+                    "edition": "2.9-5.el8"
+                  }
+                ],
+                "libselinux-utils": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643006,
+                    "edition": "2.9-5.el8"
+                  }
+                ],
+                "libsepol": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643001,
+                    "edition": "2.9-3.el8"
+                  }
+                ],
+                "checkpolicy": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.9",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643006,
+                    "edition": "2.9-1.el8"
+                  }
+                ],
+                "lzo": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.08",
+                    "release": "14.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "2.08-14.el8"
+                  }
+                ],
+                "python3-jsonschema": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.6.0",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "2.6.0-4.el8"
+                  }
+                ],
+                "libseccomp": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.5.2",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "2.5.2-1.el8"
+                  }
+                ],
+                "python3-babel": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.5.1",
+                    "release": "7.el8",
+                    "install_date_time_t": 1652643015,
+                    "edition": "2.5.1-7.el8"
+                  }
+                ],
+                "libassuan": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.5.1",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "2.5.1-3.el8"
+                  }
+                ],
+                "python3-idna": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.5",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "2.5-5.el8"
+                  }
+                ],
+                "libattr": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.4.48",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "2.4.48-3.el8"
+                  }
+                ],
+                "openldap": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.4.46",
+                    "release": "18.el8",
+                    "install_date_time_t": 1652643019,
+                    "edition": "2.4.46-18.el8"
+                  }
+                ],
+                "python3-contextvars": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.4",
+                    "release": "2.1.uyuni",
+                    "install_date_time_t": 1654265382,
+                    "edition": "2.4-2.1.uyuni"
+                  }
+                ],
+                "cryptsetup-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.3.7",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652643020,
+                    "edition": "2.3.7-2.el8"
+                  }
+                ],
+                "tpm2-tss": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.3.2",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643023,
+                    "edition": "2.3.2-4.el8"
+                  }
+                ],
+                "acl": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.2.53",
+                    "release": "1.el8.1",
+                    "install_date_time_t": 1652643005,
+                    "edition": "2.2.53-1.el8.1"
+                  }
+                ],
+                "libacl": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.2.53",
+                    "release": "1.el8.1",
+                    "install_date_time_t": 1652643003,
+                    "edition": "2.2.53-1.el8.1"
+                  }
+                ],
+                "gnupg2": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.2.20",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652643023,
+                    "edition": "2.2.20-2.el8"
+                  }
+                ],
+                "expat": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.2.5",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "2.2.5-8.el8"
+                  }
+                ],
+                "libidn2": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.2.0",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "2.2.0-1.el8"
+                  }
+                ],
+                "cyrus-sasl-lib": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.1.27",
+                    "release": "6.el8_5",
+                    "install_date_time_t": 1652643019,
+                    "edition": "2.1.27-6.el8_5"
+                  }
+                ],
+                "libevent": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.1.8",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "2.1.8-5.el8"
+                  }
+                ],
+                "python3-oauthlib": [
+                  {
+                    "arch": "noarch",
+                    "version": "2.1.0",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "2.1.0-1.el8"
+                  }
+                ],
+                "kexec-tools": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.0.20",
+                    "release": "68.el8",
+                    "install_date_time_t": 1652643052,
+                    "edition": "2.0.20-68.el8"
+                  }
+                ],
+                "libmodman": [
+                  {
+                    "arch": "x86_64",
+                    "version": "2.0.1",
+                    "release": "17.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "2.0.1-17.el8"
+                  }
+                ],
+                "gmp": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "6.1.2",
+                    "release": "10.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "1:6.1.2-10.el8"
+                  }
+                ],
+                "findutils": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "4.6.0",
+                    "release": "20.el8",
+                    "install_date_time_t": 1652643006,
+                    "edition": "1:4.6.0-20.el8"
+                  }
+                ],
+                "quota-nls": [
+                  {
+                    "arch": "noarch",
+                    "epoch": "1",
+                    "version": "4.04",
+                    "release": "14.el8",
+                    "install_date_time_t": 1652642996,
+                    "edition": "1:4.04-14.el8"
+                  }
+                ],
+                "quota": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "4.04",
+                    "release": "14.el8",
+                    "install_date_time_t": 1652643019,
+                    "edition": "1:4.04-14.el8"
+                  }
+                ],
+                "dmidecode": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "3.3",
+                    "release": "4.el8",
+                    "install_date_time_t": 1654268129,
+                    "edition": "1:3.3-4.el8"
+                  }
+                ],
+                "python3-dateutil": [
+                  {
+                    "arch": "noarch",
+                    "epoch": "1",
+                    "version": "2.6.1",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "1:2.6.1-6.el8"
+                  }
+                ],
+                "nfs-utils": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "2.3.3",
+                    "release": "51.el8",
+                    "install_date_time_t": 1652643054,
+                    "edition": "1:2.3.3-51.el8"
+                  }
+                ],
+                "libnfsidmap": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "2.3.3",
+                    "release": "51.el8",
+                    "install_date_time_t": 1652643019,
+                    "edition": "1:2.3.3-51.el8"
+                  }
+                ],
+                "grub2-pc-modules": [
+                  {
+                    "arch": "noarch",
+                    "epoch": "1",
+                    "version": "2.02",
+                    "release": "123.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "1:2.02-123.el8"
+                  }
+                ],
+                "grub2-pc": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "2.02",
+                    "release": "123.el8",
+                    "install_date_time_t": 1652643054,
+                    "edition": "1:2.02-123.el8"
+                  }
+                ],
+                "grub2-tools-extra": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "2.02",
+                    "release": "123.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "1:2.02-123.el8"
+                  }
+                ],
+                "grub2-common": [
+                  {
+                    "arch": "noarch",
+                    "epoch": "1",
+                    "version": "2.02",
+                    "release": "123.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "1:2.02-123.el8"
+                  }
+                ],
+                "grub2-tools": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "2.02",
+                    "release": "123.el8",
+                    "install_date_time_t": 1652643051,
+                    "edition": "1:2.02-123.el8"
+                  }
+                ],
+                "grub2-tools-minimal": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "2.02",
+                    "release": "123.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "1:2.02-123.el8"
+                  }
+                ],
+                "NetworkManager": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.36.0",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "1:1.36.0-4.el8"
+                  }
+                ],
+                "NetworkManager-libnm": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.36.0",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643018,
+                    "edition": "1:1.36.0-4.el8"
+                  }
+                ],
+                "gdbm": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.18",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "1:1.18-1.el8"
+                  }
+                ],
+                "gdbm-libs": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.18",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "1:1.18-1.el8"
+                  }
+                ],
+                "dbus-tools": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.12.8",
+                    "release": "18.el8",
+                    "install_date_time_t": 1652643018,
+                    "edition": "1:1.12.8-18.el8"
+                  }
+                ],
+                "dbus-libs": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.12.8",
+                    "release": "18.el8",
+                    "install_date_time_t": 1652643010,
+                    "edition": "1:1.12.8-18.el8"
+                  }
+                ],
+                "dbus": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.12.8",
+                    "release": "18.el8",
+                    "install_date_time_t": 1652643021,
+                    "edition": "1:1.12.8-18.el8"
+                  }
+                ],
+                "dbus-common": [
+                  {
+                    "arch": "noarch",
+                    "epoch": "1",
+                    "version": "1.12.8",
+                    "release": "18.el8",
+                    "install_date_time_t": 1652643020,
+                    "edition": "1:1.12.8-18.el8"
+                  }
+                ],
+                "dbus-daemon": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.12.8",
+                    "release": "18.el8",
+                    "install_date_time_t": 1652643020,
+                    "edition": "1:1.12.8-18.el8"
+                  }
+                ],
+                "openssl": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.1.1k",
+                    "release": "6.el8_5",
+                    "install_date_time_t": 1652643010,
+                    "edition": "1:1.1.1k-6.el8_5"
+                  }
+                ],
+                "openssl-libs": [
+                  {
+                    "arch": "x86_64",
+                    "epoch": "1",
+                    "version": "1.1.1k",
+                    "release": "6.el8_5",
+                    "install_date_time_t": 1652643008,
+                    "edition": "1:1.1.1k-6.el8_5"
+                  }
+                ],
+                "os-prober": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.74",
+                    "release": "9.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "1.74-9.el8"
+                  }
+                ],
+                "e2fsprogs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.45.6",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643019,
+                    "edition": "1.45.6-4.el8"
+                  }
+                ],
+                "libss": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.45.6",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643006,
+                    "edition": "1.45.6-4.el8"
+                  }
+                ],
+                "e2fsprogs-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.45.6",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "1.45.6-4.el8"
+                  }
+                ],
+                "libcom_err": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.45.6",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "1.45.6-4.el8"
+                  }
+                ],
+                "libnghttp2": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.33.0",
+                    "release": "3.el8_3.1",
+                    "install_date_time_t": 1652643007,
+                    "edition": "1.33.0-3.el8_3.1"
+                  }
+                ],
+                "libgpg-error": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.31",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "1.31-1.el8"
+                  }
+                ],
+                "python3-urllib3": [
+                  {
+                    "arch": "noarch",
+                    "version": "1.24.2",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "1.24.2-5.el8"
+                  }
+                ],
+                "python3-jsonpatch": [
+                  {
+                    "arch": "noarch",
+                    "version": "1.21",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "1.21-2.el8"
+                  }
+                ],
+                "chkconfig": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.19.1",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "1.19.1-1.el8"
+                  }
+                ],
+                "krb5-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.18.2",
+                    "release": "14.el8",
+                    "install_date_time_t": 1652643009,
+                    "edition": "1.18.2-14.el8"
+                  }
+                ],
+                "popt": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.18",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "1.18-1.el8"
+                  }
+                ],
+                "librepo": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.14.2",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "1.14.2-1.el8"
+                  }
+                ],
+                "gpgme": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.13.1",
+                    "release": "11.el8",
+                    "install_date_time_t": 1652643023,
+                    "edition": "1.13.1-11.el8"
+                  }
+                ],
+                "python3-gpg": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.13.1",
+                    "release": "11.el8",
+                    "install_date_time_t": 1652643024,
+                    "edition": "1.13.1-11.el8"
+                  }
+                ],
+                "python3-cffi": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.11.5",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "1.11.5-5.el8"
+                  }
+                ],
+                "python3-six": [
+                  {
+                    "arch": "noarch",
+                    "version": "1.11.0",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643013,
+                    "edition": "1.11.0-8.el8"
+                  }
+                ],
+                "python3-jsonpointer": [
+                  {
+                    "arch": "noarch",
+                    "version": "1.10",
+                    "release": "11.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "1.10-11.el8"
+                  }
+                ],
+                "gzip": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.9",
+                    "release": "13.el8_5",
+                    "install_date_time_t": 1652643013,
+                    "edition": "1.9-13.el8_5"
+                  }
+                ],
+                "libgcrypt": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.8.5",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "1.8.5-6.el8"
+                  }
+                ],
+                "lz4-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.8.3",
+                    "release": "3.el8_4",
+                    "install_date_time_t": 1652643003,
+                    "edition": "1.8.3-3.el8_4"
+                  }
+                ],
+                "libndp": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.7",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643007,
+                    "edition": "1.7-6.el8"
+                  }
+                ],
+                "python3-pysocks": [
+                  {
+                    "arch": "noarch",
+                    "version": "1.6.8",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "1.6.8-3.el8"
+                  }
+                ],
+                "python3-jwt": [
+                  {
+                    "arch": "noarch",
+                    "version": "1.6.1",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652643016,
+                    "edition": "1.6.1-2.el8"
+                  }
+                ],
+                "keyutils-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.5.10",
+                    "release": "9.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "1.5.10-9.el8"
+                  }
+                ],
+                "keyutils": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.5.10",
+                    "release": "9.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "1.5.10-9.el8"
+                  }
+                ],
+                "npth": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.5",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643023,
+                    "edition": "1.5-4.el8"
+                  }
+                ],
+                "libpwquality": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.4.4",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643013,
+                    "edition": "1.4.4-3.el8"
+                  }
+                ],
+                "json-glib": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.4.4",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643010,
+                    "edition": "1.4.4-1.el8"
+                  }
+                ],
+                "libzstd": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.4.4",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "1.4.4-1.el8"
+                  }
+                ],
+                "python3-distro": [
+                  {
+                    "arch": "noarch",
+                    "version": "1.4.0",
+                    "release": "2.module+el8.3.0+120+426d8baf",
+                    "install_date_time_t": 1654265335,
+                    "edition": "1.4.0-2.module+el8.3.0+120+426d8baf"
+                  }
+                ],
+                "libksba": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.3.5",
+                    "release": "7.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "1.3.5-7.el8"
+                  }
+                ],
+                "ima-evm-utils": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.3.2",
+                    "release": "12.el8",
+                    "install_date_time_t": 1652643023,
+                    "edition": "1.3.2-12.el8"
+                  }
+                ],
+                "libini_config": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.3.1",
+                    "release": "39.el8",
+                    "install_date_time_t": 1652643007,
+                    "edition": "1.3.1-39.el8"
+                  }
+                ],
+                "pam": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.3.1",
+                    "release": "16.el8",
+                    "install_date_time_t": 1652643013,
+                    "edition": "1.3.1-16.el8"
+                  }
+                ],
+                "zlib": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.2.11",
+                    "release": "18.el8_5",
+                    "install_date_time_t": 1652643001,
+                    "edition": "1.2.11-18.el8_5"
+                  }
+                ],
+                "rpcbind": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.2.5",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643050,
+                    "edition": "1.2.5-8.el8"
+                  }
+                ],
+                "python3-dbus": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.2.4",
+                    "release": "15.el8",
+                    "install_date_time_t": 1652643018,
+                    "edition": "1.2.4-15.el8"
+                  }
+                ],
+                "libkcapi": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.2.0",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "1.2.0-2.el8"
+                  }
+                ],
+                "libkcapi-hmaccalc": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.2.0",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "1.2.0-2.el8"
+                  }
+                ],
+                "libnsl2": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.2.0",
+                    "release": "2.20180605git4a062cf.el8",
+                    "install_date_time_t": 1652643010,
+                    "edition": "1.2.0-2.20180605git4a062cf.el8"
+                  }
+                ],
+                "snappy": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.1.8",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "1.1.8-3.el8"
+                  }
+                ],
+                "libutempter": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.1.6",
+                    "release": "14.el8",
+                    "install_date_time_t": 1652643019,
+                    "edition": "1.1.6-14.el8"
+                  }
+                ],
+                "libtirpc": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.1.4",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643009,
+                    "edition": "1.1.4-6.el8"
+                  }
+                ],
+                "libusbx": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.0.23",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643018,
+                    "edition": "1.0.23-4.el8"
+                  }
+                ],
+                "bzip2": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.0.6",
+                    "release": "26.el8",
+                    "install_date_time_t": 1652643006,
+                    "edition": "1.0.6-26.el8"
+                  }
+                ],
+                "bzip2-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.0.6",
+                    "release": "26.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "1.0.6-26.el8"
+                  }
+                ],
+                "brotli": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.0.6",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643006,
+                    "edition": "1.0.6-3.el8"
+                  }
+                ],
+                "libmnl": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.0.4",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "1.0.4-6.el8"
+                  }
+                ],
+                "gdisk": [
+                  {
+                    "arch": "x86_64",
+                    "version": "1.0.3",
+                    "release": "9.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "1.0.3-9.el8"
+                  }
+                ],
+                "elfutils-default-yama-scope": [
+                  {
+                    "arch": "noarch",
+                    "version": "0.186",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643020,
+                    "edition": "0.186-1.el8"
+                  }
+                ],
+                "elfutils-libelf": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.186",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "0.186-1.el8"
+                  }
+                ],
+                "elfutils-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.186",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643020,
+                    "edition": "0.186-1.el8"
+                  }
+                ],
+                "polkit-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.115",
+                    "release": "13.el8_5.2",
+                    "install_date_time_t": 1652643018,
+                    "edition": "0.115-13.el8_5.2"
+                  }
+                ],
+                "dbus-glib": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.110",
+                    "release": "2.el8",
+                    "install_date_time_t": 1652643017,
+                    "edition": "0.110-2.el8"
+                  }
+                ],
+                "python3-hawkey": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.63.0",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643050,
+                    "edition": "0.63.0-8.el8"
+                  }
+                ],
+                "libdnf": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.63.0",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643050,
+                    "edition": "0.63.0-8.el8"
+                  }
+                ],
+                "python3-libdnf": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.63.0",
+                    "release": "8.el8",
+                    "install_date_time_t": 1652643050,
+                    "edition": "0.63.0-8.el8"
+                  }
+                ],
+                "python3-m2crypto": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.35.2",
+                    "release": "2.12.uyuni",
+                    "install_date_time_t": 1654265335,
+                    "edition": "0.35.2-2.12.uyuni"
+                  }
+                ],
+                "cloud-utils-growpart": [
+                  {
+                    "arch": "noarch",
+                    "version": "0.31",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643055,
+                    "edition": "0.31-3.el8"
+                  }
+                ],
+                "p11-kit": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.23.22",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643002,
+                    "edition": "0.23.22-1.el8"
+                  }
+                ],
+                "p11-kit-trust": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.23.22",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "0.23.22-1.el8"
+                  }
+                ],
+                "python3-markupsafe": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.23",
+                    "release": "19.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "0.23-19.el8"
+                  }
+                ],
+                "libpsl": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.20.2",
+                    "release": "6.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "0.20.2-6.el8"
+                  }
+                ],
+                "gettext-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.19.8.1",
+                    "release": "17.el8",
+                    "install_date_time_t": 1652643017,
+                    "edition": "0.19.8.1-17.el8"
+                  }
+                ],
+                "gettext": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.19.8.1",
+                    "release": "17.el8",
+                    "install_date_time_t": 1652643017,
+                    "edition": "0.19.8.1-17.el8"
+                  }
+                ],
+                "nss-mdns": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.14.1",
+                    "release": "9.el8",
+                    "install_date_time_t": 1654265338,
+                    "edition": "0.14.1-9.el8"
+                  }
+                ],
+                "libdaemon": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.14",
+                    "release": "15.el8",
+                    "install_date_time_t": 1654265334,
+                    "edition": "0.14-15.el8"
+                  }
+                ],
+                "json-c": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.13.1",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "0.13.1-3.el8"
+                  }
+                ],
+                "python3-immutables": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.11",
+                    "release": "2.1.uyuni",
+                    "install_date_time_t": 1654265381,
+                    "edition": "0.11-2.1.uyuni"
+                  }
+                ],
+                "python3-netifaces": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.10.6",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "0.10.6-4.el8"
+                  }
+                ],
+                "libunistring": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.9.9",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "0.9.9-3.el8"
+                  }
+                ],
+                "libssh-config": [
+                  {
+                    "arch": "noarch",
+                    "version": "0.9.6",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643048,
+                    "edition": "0.9.6-3.el8"
+                  }
+                ],
+                "libssh": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.9.6",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "0.9.6-3.el8"
+                  }
+                ],
+                "gssproxy": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.8.0",
+                    "release": "20.el8",
+                    "install_date_time_t": 1652643022,
+                    "edition": "0.8.0-20.el8"
+                  }
+                ],
+                "libsolv": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.7.20",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643049,
+                    "edition": "0.7.20-1.el8"
+                  }
+                ],
+                "libcap-ng": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.7.11",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "0.7.11-1.el8"
+                  }
+                ],
+                "python3-prettytable": [
+                  {
+                    "arch": "noarch",
+                    "version": "0.7.2",
+                    "release": "14.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "0.7.2-14.el8"
+                  }
+                ],
+                "libcollection": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.7.0",
+                    "release": "39.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "0.7.0-39.el8"
+                  }
+                ],
+                "avahi-libs": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.7",
+                    "release": "20.el8",
+                    "install_date_time_t": 1654265334,
+                    "edition": "0.7-20.el8"
+                  }
+                ],
+                "avahi": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.7",
+                    "release": "20.el8",
+                    "install_date_time_t": 1654265335,
+                    "edition": "0.7-20.el8"
+                  }
+                ],
+                "libcroco": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.6.12",
+                    "release": "4.el8_2.1",
+                    "install_date_time_t": 1652643010,
+                    "edition": "0.6.12-4.el8_2.1"
+                  }
+                ],
+                "libproxy": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.4.15",
+                    "release": "5.2.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "0.4.15-5.2.el8"
+                  }
+                ],
+                "python3-msgpack": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.4.6",
+                    "release": "2.19.uyuni",
+                    "install_date_time_t": 1654265335,
+                    "edition": "0.4.6-2.19.uyuni"
+                  }
+                ],
+                "libbpf": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.4.0",
+                    "release": "3.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "0.4.0-3.el8"
+                  }
+                ],
+                "libverto-libevent": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.3.0",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "0.3.0-5.el8"
+                  }
+                ],
+                "libverto": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.3.0",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643003,
+                    "edition": "0.3.0-5.el8"
+                  }
+                ],
+                "ipcalc": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.2.4",
+                    "release": "4.el8",
+                    "install_date_time_t": 1652643007,
+                    "edition": "0.2.4-4.el8"
+                  }
+                ],
+                "libpath_utils": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.2.1",
+                    "release": "39.el8",
+                    "install_date_time_t": 1652643007,
+                    "edition": "0.2.1-39.el8"
+                  }
+                ],
+                "python3-libcomps": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.1.18",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643014,
+                    "edition": "0.1.18-1.el8"
+                  }
+                ],
+                "libcomps": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.1.18",
+                    "release": "1.el8",
+                    "install_date_time_t": 1652643005,
+                    "edition": "0.1.18-1.el8"
+                  }
+                ],
+                "libyaml": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.1.7",
+                    "release": "5.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "0.1.7-5.el8"
+                  }
+                ],
+                "libref_array": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.1.5",
+                    "release": "39.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "0.1.5-39.el8"
+                  }
+                ],
+                "libbasicobjects": [
+                  {
+                    "arch": "x86_64",
+                    "version": "0.1.1",
+                    "release": "39.el8",
+                    "install_date_time_t": 1652643004,
+                    "edition": "0.1.1-39.el8"
+                  }
+                ]
+              }
+            },
+            "comment": "Module function pkg.info_installed executed",
+            "result": true,
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 3,
+            "start_time": "15:55:52.093314",
+            "duration": 932.799,
+            "__id__": "packages"
+          },
+          "cmd_|-rhelrelease_|-cat /etc/redhat-release_|-run": {
+            "result": true,
+            "name": "cat /etc/redhat-release",
+            "changes": {},
+            "comment": "onlyif condition is false",
+            "skip_watch": true,
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 4,
+            "start_time": "15:55:53.028227",
+            "duration": 1202.881,
+            "__id__": "rhelrelease"
+          },
+          "cmd_|-alibabarelease_|-cat /etc/alinux-release_|-run": {
+            "result": true,
+            "name": "cat /etc/alinux-release",
+            "changes": {},
+            "comment": "onlyif condition is false",
+            "skip_watch": true,
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 5,
+            "start_time": "15:55:54.231621",
+            "duration": 16.568,
+            "__id__": "alibabarelease"
+          },
+          "cmd_|-centosrelease_|-cat /etc/centos-release_|-run": {
+            "name": "cat /etc/centos-release",
+            "changes": {
+              "pid": 6692,
+              "retcode": 0,
+              "stdout": "Rocky Linux release 8.6 (Green Obsidian)",
+              "stderr": ""
+            },
+            "result": true,
+            "comment": "Command \"cat /etc/centos-release\" run",
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 6,
+            "start_time": "15:55:54.248587",
+            "duration": 26.682,
+            "__id__": "centosrelease"
+          },
+          "cmd_|-oraclerelease_|-cat /etc/oracle-release_|-run": {
+            "result": true,
+            "name": "cat /etc/oracle-release",
+            "changes": {},
+            "comment": "onlyif condition is false",
+            "skip_watch": true,
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 7,
+            "start_time": "15:55:54.275610",
+            "duration": 13.356,
+            "__id__": "oraclerelease"
+          },
+          "cmd_|-amazonrelease_|-cat /etc/system-release_|-run": {
+            "result": true,
+            "name": "cat /etc/system-release",
+            "changes": {},
+            "comment": "onlyif condition is false",
+            "skip_watch": true,
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 8,
+            "start_time": "15:55:54.289317",
+            "duration": 14.165,
+            "__id__": "amazonrelease"
+          },
+          "cmd_|-almarelease_|-cat /etc/almalinux-release_|-run": {
+            "result": true,
+            "name": "cat /etc/almalinux-release",
+            "changes": {},
+            "comment": "onlyif condition is false",
+            "skip_watch": true,
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 9,
+            "start_time": "15:55:54.303835",
+            "duration": 13.38,
+            "__id__": "almarelease"
+          },
+          "cmd_|-rockyrelease_|-cat /etc/rocky-release_|-run": {
+            "name": "cat /etc/rocky-release",
+            "changes": {
+              "pid": 6697,
+              "retcode": 0,
+              "stdout": "Rocky Linux release 8.6 (Green Obsidian)",
+              "stderr": ""
+            },
+            "result": true,
+            "comment": "Command \"cat /etc/rocky-release\" run",
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 10,
+            "start_time": "15:55:54.317636",
+            "duration": 19.957,
+            "__id__": "rockyrelease"
+          },
+          "cmd_|-respkgquery_|-rpm -q --whatprovides 'sles_es-release-server'_|-run": {
+            "result": true,
+            "name": "rpm -q --whatprovides 'sles_es-release-server'",
+            "changes": {},
+            "comment": "onlyif condition is false",
+            "skip_watch": true,
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 11,
+            "start_time": "15:55:54.337938",
+            "duration": 27.183,
+            "__id__": "respkgquery"
+          },
+          "mgrcompat_|-grains_update_|-grains.items_|-module_run": {
+            "name": "grains.items",
+            "changes": {
+              "ret": {
+                "cwd": "/",
+                "ip_gw": true,
+                "ip4_gw": "192.168.122.1",
+                "ip6_gw": false,
+                "dns": {
+                  "nameservers": [
+                    "192.168.122.1"
+                  ],
+                  "ip4_nameservers": [
+                    "192.168.122.1"
+                  ],
+                  "ip6_nameservers": [],
+                  "sortlist": [],
+                  "domain": "",
+                  "search": [
+                    "suse.lab"
+                  ],
+                  "options": []
+                },
+                "fqdns": [],
+                "machine_id": "9918cd30578aed5d61be0ed8629a16a5",
+                "master": "m42-server.tf.local",
+                "server_id": 1714423938,
+                "localhost": "m42-min-rocky8o",
+                "fqdn": "m42-min-rocky8o.tf.local",
+                "host": "m42-min-rocky8o",
+                "domain": "tf.local",
+                "hwaddr_interfaces": {
+                  "lo": "00:00:00:00:00:00",
+                  "ens3": "52:54:00:f2:cf:4b"
+                },
+                "id": "m42-min-rocky8o.tf.local",
+                "ip4_interfaces": {
+                  "lo": [
+                    "127.0.0.1"
+                  ],
+                  "ens3": [
+                    "192.168.122.111"
+                  ]
+                },
+                "ip6_interfaces": {
+                  "lo": [
+                    "::1"
+                  ],
+                  "ens3": [
+                    "fe80::185a:6a3e:b55e:587c"
+                  ]
+                },
+                "ipv4": [
+                  "127.0.0.1",
+                  "192.168.122.111"
+                ],
+                "ipv6": {
+                  "accept_ra": true,
+                  "enable": true
+                },
+                "fqdn_ip4": [
+                  "192.168.122.111"
+                ],
+                "fqdn_ip6": [],
+                "ip_interfaces": {
+                  "lo": [
+                    "127.0.0.1",
+                    "::1"
+                  ],
+                  "ens3": [
+                    "192.168.122.111",
+                    "fe80::185a:6a3e:b55e:587c"
+                  ]
+                },
+                "kernelparams": [
+                  [
+                    "BOOT_IMAGE",
+                    "/boot/vmlinuz-4.18.0-372.9.1.el8.x86_64"
+                  ],
+                  [
+                    "root",
+                    null
+                  ],
+                  [
+                    "ro",
+                    null
+                  ],
+                  [
+                    "rhgb",
+                    null
+                  ],
+                  [
+                    "selinux",
+                    "0"
+                  ],
+                  [
+                    "audit",
+                    "0"
+                  ],
+                  [
+                    "rw",
+                    null
+                  ]
+                ],
+                "locale_info": {
+                  "defaultlanguage": "en_US",
+                  "defaultencoding": "UTF-8",
+                  "detectedencoding": "UTF-8",
+                  "timezone": "WEST"
+                },
+                "num_gpus": 0,
+                "gpus": [],
+                "kernel": "Linux",
+                "nodename": "m42-min-rocky8o",
+                "kernelrelease": "4.18.0-372.9.1.el8.x86_64",
+                "kernelversion": "#1 SMP Tue May 10 14:48:47 UTC 2022",
+                "cpuarch": "x86_64",
+                "selinux": {
+                  "enabled": false,
+                  "enforced": "Disabled"
+                },
+                "systemd": {
+                  "version": "239",
+                  "features": "+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy"
+                },
+                "init": "systemd",
+                "lsb_distrib_id": "Rocky Linux",
+                "lsb_distrib_release": "8.6",
+                "lsb_distrib_codename": "Rocky Linux 8.6 (Green Obsidian)",
+                "osfullname": "Rocky Linux",
+                "osrelease": "8.6",
+                "oscodename": "Rocky Linux 8.6 (Green Obsidian)",
+                "os": "Rocky",
+                "num_cpus": 1,
+                "cpu_model": "QEMU Virtual CPU version 2.5+",
+                "cpu_flags": [
+                  "fpu",
+                  "de",
+                  "pse",
+                  "tsc",
+                  "msr",
+                  "pae",
+                  "mce",
+                  "cx8",
+                  "apic",
+                  "sep",
+                  "mtrr",
+                  "pge",
+                  "mca",
+                  "cmov",
+                  "pse36",
+                  "clflush",
+                  "mmx",
+                  "fxsr",
+                  "sse",
+                  "sse2",
+                  "syscall",
+                  "nx",
+                  "lm",
+                  "rep_good",
+                  "nopl",
+                  "xtopology",
+                  "cpuid",
+                  "tsc_known_freq",
+                  "pni",
+                  "cx16",
+                  "x2apic",
+                  "hypervisor",
+                  "lahf_lm",
+                  "cpuid_fault",
+                  "pti"
+                ],
+                "os_family": "RedHat",
+                "osarch": "x86_64",
+                "mem_total": 964,
+                "swap_total": 0,
+                "biosversion": "rel-1.14.0-0-g155821a-rebuilt.opensuse.org",
+                "productname": "Standard PC (i440FX + PIIX, 1996)",
+                "manufacturer": "QEMU",
+                "biosreleasedate": "04/01/2014",
+                "uuid": "614eef83-d3a0-4d48-b2cd-df37783b5459",
+                "serialnumber": "",
+                "virtual": "kvm",
+                "ps": "ps -efHww",
+                "osrelease_info": [
+                  8,
+                  6
+                ],
+                "osmajorrelease": 8,
+                "osfinger": "Rocky Linux-8",
+                "path": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin",
+                "systempath": [
+                  "/usr/local/sbin",
+                  "/usr/local/bin",
+                  "/usr/sbin",
+                  "/usr/bin"
+                ],
+                "pythonexecutable": "/usr/libexec/platform-python",
+                "pythonpath": [
+                  "/usr/bin",
+                  "/usr/lib64/python36.zip",
+                  "/usr/lib64/python3.6",
+                  "/usr/lib64/python3.6/lib-dynload",
+                  "/usr/lib64/python3.6/site-packages",
+                  "/usr/lib/python3.6/site-packages"
+                ],
+                "pythonversion": [
+                  3,
+                  6,
+                  8,
+                  "final",
+                  0
+                ],
+                "saltpath": "/usr/lib/python3.6/site-packages/salt",
+                "saltversion": "3004",
+                "saltversioninfo": [
+                  3004
+                ],
+                "zmqversion": "4.1.6",
+                "cpu_cores": "1",
+                "cpu_numanodes": "1",
+                "cpu_vendor": "GenuineIntel",
+                "cpu_stepping": "3",
+                "cpusockets": 1,
+                "total_num_cpus": 1,
+                "is_mgr_server": false,
+                "has_report_db": false,
+                "is_uyuni": true,
+                "disks": [
+                  "sr0",
+                  "vda"
+                ],
+                "ssds": [],
+                "additional_certs": {},
+                "additional_network": null,
+                "additional_packages": [
+                  "venv-salt-minion"
+                ],
+                "additional_repos": {},
+                "additional_repos_only": false,
+                "authorized_keys": [
+                  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCthLeGVsKDBzyJnERxv/3vX2+RqP+Z4HAx5NV730SWr/aofH7acIH3E7pJBLaZVazFgxZ2Cn9UXty8b5ZU15qPG2x+aukfbCo7c+DZAcP5Fc5pewP6N/reA+/rC59lu6AZPKdcEq0qzG34YTJwVOlax01tNpvRrGmV6LflGaONT2uefWDJOZegPZ9l9BMMSLILUdzl4lS3bz68uvkQaM/Kjjckhlo6U1O8hf1JkoWbwZ94bkYc9xVX8m7Y48qwdDcG5Z4rOWA3zuEsi6Eber4fzx4WmZN5/Kja6bk8w5gWq8ZtAk20Bl0ABxCii8wuSDrbaxJNOxMDy7p5PHftmKhQHvYqUWNLeEyQ1uNYrjvxKZ8RMN+RFWROt0CqHL7Otoa0hMlIJJpDK/QTOPhGUMO5Mvw388E7GrpHJ3Q9k6CNrmTUNz9FzRWAIGfXSpFX7GnajKH5gJZ2vH1cyGMS8odmVJ4vqejFHqdvvSGbLYwfPuNLXqcygndkYDlFjJ1m5oL8v5FBeMp2QZWhv9ZVD6r3sF7kyBM4clcAdRxMyvynnvYHcZ1WAFH9AzbJnr7b8loOJ18tnFq4BGE6NLeBD5LRzM8yCzBdLjXuASxyHNvGCWAQs9SsviYAweaJeD7Fam4umSBnDsxIAJGIJ4GJ8wlV4WVMyKZ0V1avRueWM1APGw== rdiasmateus@suse.de"
+                ],
+                "auto_connect_to_master": true,
+                "avahi_reflector": false,
+                "connect_to_additional_network": true,
+                "connect_to_base_network": true,
+                "data_disk_device": null,
+                "disable_firewall": true,
+                "evil_minion_count": 0,
+                "evil_minion_slowdown_factor": 0,
+                "gpg_keys": [],
+                "hostname": "m42-min-rocky8o",
+                "install_salt_bundle": false,
+                "mirror": null,
+                "product_version": "uyuni-master",
+                "provider": "libvirt",
+                "reset_ids": true,
+                "roles": [
+                  "minion"
+                ],
+                "server": "m42-server.tf.local",
+                "sles_registration_code": null,
+                "susemanager": {
+                  "activation_key": null
+                },
+                "swap_file_size": 0,
+                "testsuite": false,
+                "timezone": "Europe/Lisbon",
+                "use_avahi": true,
+                "use_ntp": true,
+                "use_os_released_updates": false,
+                "use_os_unreleased_updates": false,
+                "shell": "/bin/sh",
+                "__suse_reserved_pkg_all_versions_support": true,
+                "__suse_reserved_pkg_patches_support": true,
+                "__suse_reserved_saltutil_states_support": true,
+                "transactional": false,
+                "efi": false,
+                "efi-secure-boot": false,
+                "mdadm": [],
+                "username": "root",
+                "groupname": "root",
+                "pid": 4792,
+                "gid": 0,
+                "uid": 0,
+                "zfs_support": false,
+                "zfs_feature_flags": false
+              }
+            },
+            "comment": "Module function grains.items executed",
+            "result": true,
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 12,
+            "start_time": "15:55:54.365923",
+            "duration": 5.426,
+            "__id__": "grains_update"
+          },
+          "mgrcompat_|-kernel_live_version_|-sumautil.get_kernel_live_version_|-module_run": {
+            "name": "sumautil.get_kernel_live_version",
+            "changes": {
+              "ret": null
+            },
+            "comment": "Module function sumautil.get_kernel_live_version executed",
+            "result": true,
+            "__sls__": "packages.profileupdate",
+            "__run_num__": 13,
+            "start_time": "15:55:54.372045",
+            "duration": 4.983,
+            "__id__": "kernel_live_version"
+          }
+        }
+      }
+    }
+  ]
+}
