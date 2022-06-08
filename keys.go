@@ -20,18 +20,18 @@ func maink() {
 	args := make([]interface{}, 0)
 	args = append(args, "ls")
 
-	keys := wheel.KeyListAllSync().CallSync(clientSalt)
+	keys := wheel.KeyListAll().CallSync(clientSalt)
 
 	fmt.Printf("KEYS data: >%s<\n", keys)
 	for _, val := range keys.Data.Return.MinionsPre {
 		fmt.Printf("accepting %s\n", val)
-		//wheel.KeyAcceptSync(clientSalt, val)
+		//wheel.KeyAccept(clientSalt, val)
 	}
 
-	wheel.KeyGenSync("my_id1").CallSync(clientSalt)
-	wheel.KeyGenAcceptSync("my-id-2", true).CallSync(clientSalt)
+	wheel.KeyGen("my_id1").CallSync(clientSalt)
+	wheel.KeyGenAccept("my-id-2", true).CallSync(clientSalt)
 
-	keyMinion := wheel.KeyFingerSync("m43-minion-suse.tf.local").CallSync(clientSalt)
+	keyMinion := wheel.KeyFinger("m43-minion-suse.tf.local").CallSync(clientSalt)
 	fmt.Printf("Finger Minion: >%s<\n", keyMinion)
 
 	data := calls.ListMinions(clientSalt)

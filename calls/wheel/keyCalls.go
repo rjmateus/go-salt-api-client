@@ -5,13 +5,13 @@ package wheel
 * https://docs.saltproject.io/en/latest/ref/wheel/all/salt.wheel.key.html
  */
 
-func KeyListAllSync() WheelCall[Keys[[]string]] {
+func KeyListAll() WheelCall[Keys[[]string]] {
 	var result = &APIReturnType[WheelResultType[Keys[[]string]]]{}
 	call := WheelCall[Keys[[]string]]{"key.list_all", nil, result}
 	return call
 }
 
-func KeyFingerSync(match string) WheelCall[Keys[map[string]string]] {
+func KeyFinger(match string) WheelCall[Keys[map[string]string]] {
 	var result = &APIReturnType[WheelResultType[Keys[map[string]string]]]{}
 
 	args := make(map[string]interface{})
@@ -20,7 +20,7 @@ func KeyFingerSync(match string) WheelCall[Keys[map[string]string]] {
 	return call
 }
 
-func KeyAcceptSync(match string) WheelCall[interface{}] {
+func KeyAccept(match string) WheelCall[interface{}] {
 	var result = &APIReturnType[WheelResultType[interface{}]]{}
 	args := make(map[string]interface{})
 	args["match"] = match
@@ -28,7 +28,7 @@ func KeyAcceptSync(match string) WheelCall[interface{}] {
 	return call
 }
 
-func KeyRejectSync(match string) WheelCall[interface{}] {
+func KeyReject(match string) WheelCall[interface{}] {
 	var result = &APIReturnType[WheelResultType[interface{}]]{}
 	args := make(map[string]interface{})
 	args["match"] = match
@@ -36,7 +36,7 @@ func KeyRejectSync(match string) WheelCall[interface{}] {
 	return call
 }
 
-func KeyDeleteSync(match string) WheelCall[interface{}] {
+func KeyDelete(match string) WheelCall[interface{}] {
 	var result = &APIReturnType[WheelResultType[interface{}]]{}
 	args := make(map[string]interface{})
 	args["match"] = match
@@ -44,19 +44,19 @@ func KeyDeleteSync(match string) WheelCall[interface{}] {
 	return call
 }
 
-func KeyGenSync(id string) WheelCall[KeyGen] {
-	var result = &APIReturnType[WheelResultType[KeyGen]]{}
+func KeyGen(id string) WheelCall[KeyGenResult] {
+	var result = &APIReturnType[WheelResultType[KeyGenResult]]{}
 	args := make(map[string]interface{})
 	args["id_"] = id
-	call := WheelCall[KeyGen]{"key.gen", args, result}
+	call := WheelCall[KeyGenResult]{"key.gen", args, result}
 	return call
 }
 
-func KeyGenAcceptSync(id string, force bool) WheelCall[KeyGen] {
-	var result = &APIReturnType[WheelResultType[KeyGen]]{}
+func KeyGenAccept(id string, force bool) WheelCall[KeyGenResult] {
+	var result = &APIReturnType[WheelResultType[KeyGenResult]]{}
 	args := make(map[string]interface{})
 	args["id_"] = id
 	args["force"] = force
-	call := WheelCall[KeyGen]{"key.gen_accept", args, result}
+	call := WheelCall[KeyGenResult]{"key.gen_accept", args, result}
 	return call
 }

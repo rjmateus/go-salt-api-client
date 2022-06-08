@@ -31,7 +31,7 @@ type Keys[T any] struct {
 	Local           T `json:"local"`
 }
 
-type KeyGen struct {
+type KeyGenResult struct {
 	Pub  string
 	Priv string
 }
