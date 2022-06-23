@@ -6,10 +6,10 @@ import (
 	"github.com/rjmateus/go-salt-api-client/client"
 )
 
-func main() {
+func main3() {
 
-	clientSalt := client.NewClient("https://m42-server.tf.local:9080",
-		"admin", "78b4c3f73ab2750e7c84a4aa028002c24d72e9119f46696e8eb9b0f4156fd376",
+	clientSalt := client.NewClient("https://m43-server.tf.local:9080",
+		"admin", "328ae1ec5a83f4b6df81dc8392b0b8fa1367c910efd22a6d978c735b97061e3f",
 		"file")
 
 	args := make([]interface{}, 0)

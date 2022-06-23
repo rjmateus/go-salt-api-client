@@ -20,7 +20,7 @@ func TestKeyListAllSyncOK(t *testing.T) {
 	}
 	data := call.CallSync(htppClient)
 	if len(data.Data.Return.Local) != 2 || len(data.Data.Return.MinionsPre) != 1 || len(data.Data.Return.MinionsRejected) != 1 || len(data.Data.Return.MinionsRejected) != 1 {
-		t.Errorf("data note correctly loaded not de-serialized")
+		t.Errorf("data not correctly loaded and de-serialized")
 	}
 }
 
@@ -38,7 +38,7 @@ func TestKeyFingerSyncOK(t *testing.T) {
 	}
 	/*data := call.CallSync(htppClient)
 	if len(data.Data.Return.Local) != 2 || len(data.Data.Return.MinionsPre) != 1 || len(data.Data.Return.MinionsRejected) != 1 || len(data.Data.Return.MinionsRejected) != 1 {
-		t.Errorf("data note correctly loaded not de-serialized")
+		t.Errorf("data not correctly loaded and de-serialized")
 	}*/
 }
 
@@ -58,7 +58,7 @@ func TestKeyAcceptSyncOK(t *testing.T) {
 
 	/*data := call.CallSync(htppClient)
 	if len(data.Data.Return.Local) != 2 || len(data.Data.Return.MinionsPre) != 1 || len(data.Data.Return.MinionsRejected) != 1 || len(data.Data.Return.MinionsRejected) != 1 {
-		t.Errorf("data note correctly loaded not de-serialized")
+		t.Errorf("data not correctly loaded and de-serialized")
 	}*/
 }
 
@@ -77,7 +77,7 @@ func TestKeyRejectSyncOK(t *testing.T) {
 
 	/*data := call.CallSync(htppClient)
 	if len(data.Data.Return.Local) != 2 || len(data.Data.Return.MinionsPre) != 1 || len(data.Data.Return.MinionsRejected) != 1 || len(data.Data.Return.MinionsRejected) != 1 {
-		t.Errorf("data note correctly loaded not de-serialized")
+		t.Errorf("data not correctly loaded and de-serialized")
 	}*/
 }
 
@@ -95,7 +95,7 @@ func TestKeyDeleteSyncOK(t *testing.T) {
 	}
 	/*data := call.CallSync(htppClient)
 	if len(data.Data.Return.Local) != 2 || len(data.Data.Return.MinionsPre) != 1 || len(data.Data.Return.MinionsRejected) != 1 || len(data.Data.Return.MinionsRejected) != 1 {
-		t.Errorf("data note correctly loaded not de-serialized")
+		t.Errorf("data not correctly loaded and de-serialized")
 	}*/
 }
 
@@ -114,7 +114,7 @@ func TestKeyGenSyncOK(t *testing.T) {
 	}
 	/*data := call.CallSync(htppClient)
 	if len(data.Data.Return.Local) != 2 || len(data.Data.Return.MinionsPre) != 1 || len(data.Data.Return.MinionsRejected) != 1 || len(data.Data.Return.MinionsRejected) != 1 {
-		t.Errorf("data note correctly loaded not de-serialized")
+		t.Errorf("data not correctly loaded and de-serialized")
 	}*/
 }
 
@@ -139,6 +139,6 @@ func TestKeyGenAcceptSyncOK(t *testing.T) {
 
 	/*data := call.CallSync(htppClient)
 	if len(data.Data.Return.Local) != 2 || len(data.Data.Return.MinionsPre) != 1 || len(data.Data.Return.MinionsRejected) != 1 || len(data.Data.Return.MinionsRejected) != 1 {
-		t.Errorf("data note correctly loaded not de-serialized")
+		t.Errorf("data not correctly loaded and de-serialized")
 	}*/
 }

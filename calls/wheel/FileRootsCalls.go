@@ -14,7 +14,7 @@ func FileRootsListEnv(saltenv string) WheelCall[FileRootListRoot] {
 	var result = &APIReturn[WheelResult[FileRootListRoot]]{}
 	args := make(map[string]interface{})
 	if len(saltenv) > 0 {
-		args[saltenv] = saltenv
+		args["saltenv"] = saltenv
 	}
 	call := WheelCall[FileRootListRoot]{"file_roots.list_env", args, result}
 	return call

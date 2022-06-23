@@ -1,0 +1,208 @@
+{
+  "return": [
+    {
+      "tag": "salt/wheel/20220623213102072034",
+      "data": {
+        "fun": "wheel.file_roots.list_roots",
+        "jid": "20220623213102072034",
+        "tag": "salt/wheel/20220623213102072034",
+        "user": "admin",
+        "_stamp": "2022-06-23T21:31:02.156521",
+        "return": {
+          "base": [
+            {
+              "/usr/share/susemanager/salt": {
+                "_beacons": {
+                  "pkgset.py": "f"
+                },
+                "_grains": {
+                  "cpuinfo.py": "f",
+                  "mgr_server.py": "f",
+                  "public_cloud.py": "f",
+                  "virt.py": "f"
+                },
+                "_modules": {
+                  "kiwi_info.py": "f",
+                  "kiwi_source.py": "f",
+                  "mainframesysinfo.py": "f",
+                  "mgractionchains.py": "f",
+                  "ssh_agent.py": "f",
+                  "sumautil.py": "f",
+                  "udevdb.py": "f",
+                  "virt_utils.py": "f"
+                },
+                "_states": {
+                  "mgrcompat.py": "f",
+                  "mgrutils.py": "f",
+                  "product.py": "f",
+                  "reportdb_user.py": "f",
+                  "virt_utils.py": "f"
+                },
+                "actionchains": {
+                  "force_restart_minion.sh": "f",
+                  "resumessh.sls": "f",
+                  "startssh.sls": "f"
+                },
+                "ansible": {
+                  "init.sls": "f",
+                  "mgr-ssh-pubkey-authorized.sls": "f",
+                  "mgr-ssh-pubkey-authorized.yml": "f",
+                  "runplaybook.sls": "f"
+                },
+                "bootloader": {
+                  "42_uyuni_reinstall.templ": "f",
+                  "autoinstall.sls": "f",
+                  "elilo_uyuni_reinstall.templ": "f",
+                  "grub1_uyuni_reinstall.templ": "f"
+                },
+                "bootstrap": {
+                  "bootstrap.repo": "f",
+                  "init.sls": "f",
+                  "remove_traditional_stack.sls": "f",
+                  "set_proxy.sls": "f",
+                  "susemanager.conf": "f"
+                },
+                "certs": {
+                  "debian.sls": "f",
+                  "init.sls": "f",
+                  "redhat.sls": "f",
+                  "suse.sls": "f",
+                  "update-multi-cert.sh": "f",
+                  "RHN-ORG-TRUSTED-SSL-CERT": "f"
+                },
+                "channels": {
+                  "dnf-susemanager-plugin": {
+                    "susemanagerplugin.conf": "f",
+                    "susemanagerplugin.py": "f"
+                  },
+                  "yum-susemanager-plugin": {
+                    "susemanagerplugin.conf": "f",
+                    "susemanagerplugin.py": "f"
+                  },
+                  "aptauth.conf": "f",
+                  "channels.repo": "f",
+                  "disablelocalrepos.sls": "f",
+                  "gpg-keys.sls": "f",
+                  "init.sls": "f"
+                },
+                "cleanup_minion": {
+                  "init.sls": "f"
+                },
+                "cleanup_ssh_minion": {
+                  "init.sls": "f"
+                },
+                "configuration": {
+                  "deploy_files.sls": "f",
+                  "diff_files.sls": "f"
+                },
+                "custom": {
+                  "init.sls": "f"
+                },
+                "custom_groups": {
+                  "init.sls": "f"
+                },
+                "custom_org": {
+                  "init.sls": "f"
+                },
+                "distupgrade": {
+                  "init.sls": "f"
+                },
+                "hardware": {
+                  "profileupdate.sls": "f"
+                },
+                "images": {
+                  "docker.sls": "f",
+                  "kiwi-image-build.sls": "f",
+                  "kiwi-image-inspect.sls": "f",
+                  "profileupdate.sls": "f",
+                  "rhn-org-trusted-ssl-cert-osimage-1.0-1.noarch.rpm": "f",
+                  "rhn-org-trusted-ssl-cert-osimage-1.0-1.src.rpm": "f",
+                  "rhn-org-trusted-ssl-cert-osimage-sle11-1.0-1.noarch.rpm": "f",
+                  "rhn-org-trusted-ssl-cert-osimage-sle11-1.0-1.src.rpm": "f"
+                },
+                "packages": {
+                  "init.sls": "f",
+                  "patchdownload.sls": "f",
+                  "patchinstall.sls": "f",
+                  "pkgdownload.sls": "f",
+                  "pkginstall.sls": "f",
+                  "pkglock.sls": "f",
+                  "pkgremove.sls": "f",
+                  "pkgupdate.sls": "f",
+                  "profileupdate.sls": "f",
+                  "redhatproductinfo.sls": "f"
+                },
+                "remotecommands": {
+                  "init.sls": "f"
+                },
+                "scap": {
+                  "init.sls": "f"
+                },
+                "services": {
+                  "docker.sls": "f",
+                  "kiwi-image-server.sls": "f",
+                  "reportdb-user.sls": "f",
+                  "salt-minion.sls": "f"
+                },
+                "srvmonitoring": {
+                  "disable.sls": "f",
+                  "enable.sls": "f",
+                  "java_agent.yaml": "f",
+                  "postgres_exporter_queries.yaml": "f",
+                  "prometheus-postgres_exporter": "f",
+                  "removejmxprops.sls": "f",
+                  "status.sls": "f",
+                  "taskomatic_jmx.conf": "f",
+                  "tomcat_jmx.conf": "f"
+                },
+                "ssh_bootstrap": {
+                  "init.sls": "f"
+                },
+                "util": {
+                  "mgr_disable_fqdns_grain.sls": "f",
+                  "mgr_mine_config_clean_up.sls": "f",
+                  "mgr_start_event_grains.sls": "f",
+                  "mgr_switch_to_venv_minion.sls": "f",
+                  "noop.sls": "f",
+                  "syncbeacons.sls": "f",
+                  "synccustomall.sls": "f",
+                  "syncgrains.sls": "f",
+                  "syncmodules.sls": "f",
+                  "syncstates.sls": "f",
+                  "systeminfo.sls": "f"
+                },
+                "virt": {
+                  "cluster-vm-primitive.conf": "f",
+                  "create-vm.sls": "f",
+                  "deleted.sls": "f",
+                  "engine-events.sls": "f",
+                  "guest-migrate.sls": "f",
+                  "network-create.sls": "f",
+                  "network-statechange.sls": "f",
+                  "pool-create.sls": "f",
+                  "pool-deleted.sls": "f",
+                  "pool-refreshed.sls": "f",
+                  "pool-statechange.sls": "f",
+                  "reset.sls": "f",
+                  "resumed.sls": "f",
+                  "setmem.sls": "f",
+                  "setvcpus.sls": "f",
+                  "statechange.sls": "f",
+                  "suspended.sls": "f",
+                  "update-vm.sls": "f",
+                  "volume-deleted.sls": "f"
+                }
+              },
+              "/usr/share/salt-formulas/states": {
+                "system-lock": {
+                  "init.sls": "f"
+                }
+              }
+            }
+          ]
+        },
+        "success": true
+      }
+    }
+  ]
+}
