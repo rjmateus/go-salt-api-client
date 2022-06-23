@@ -39,11 +39,6 @@ func NewClient(url, username, password, eauth string) SaltClient {
 	}
 }
 
-//TODO to explore:
-// minions endpoint: https://docs.saltproject.io/en/latest/ref/netapi/all/salt.netapi.rest_cherrypy.html#minions
-// event BUS WS: https://docs.saltproject.io/en/latest/ref/netapi/all/salt.netapi.rest_cherrypy.html#ws
-// 		I'm not sure if this is useful. Auth method are different
-
 // Run: more info at:https://docs.saltproject.io/en/latest/ref/netapi/all/salt.netapi.rest_cherrypy.html#run
 func (c *SaltClient) Run(clilentType ClientType, fun string, tgt target.SaltTarget,
 	args []interface{}, kwargs map[string]interface{}) (data *RunResult, err error) {
@@ -94,9 +89,6 @@ func (c *SaltClient) Run(clilentType ClientType, fun string, tgt target.SaltTarg
 	return decodedData, nil
 }
 
-//call(Call<?> call, Client client, Optional<Target<?>> target,
-//Map<String, Object> custom, TypeToken<R> type, AuthMethod auth)
-
 func (c *SaltClient) Call(call calls.Call, clientType ClientType, tgt *target.SaltTarget) (data []byte, err error) {
 
 	props := make(map[string]interface{})
@@ -134,6 +126,7 @@ func (c *SaltClient) Call(call calls.Call, clientType ClientType, tgt *target.Sa
 		return nil, err
 	}
 
+	// FIXME
 	fmt.Printf("Raw data: >%s<\n", body)
 	return body, nil
 }
