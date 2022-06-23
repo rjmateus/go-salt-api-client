@@ -6,13 +6,13 @@ package wheel
  */
 
 func KeyListAll() WheelCall[Keys[[]string]] {
-	var result = &APIReturnType[WheelResultType[Keys[[]string]]]{}
+	var result = &APIReturn[WheelResult[Keys[[]string]]]{}
 	call := WheelCall[Keys[[]string]]{"key.list_all", nil, result}
 	return call
 }
 
 func KeyFinger(match string) WheelCall[Keys[map[string]string]] {
-	var result = &APIReturnType[WheelResultType[Keys[map[string]string]]]{}
+	var result = &APIReturn[WheelResult[Keys[map[string]string]]]{}
 
 	args := make(map[string]interface{})
 	args["match"] = match
@@ -21,7 +21,7 @@ func KeyFinger(match string) WheelCall[Keys[map[string]string]] {
 }
 
 func KeyAccept(match string) WheelCall[interface{}] {
-	var result = &APIReturnType[WheelResultType[interface{}]]{}
+	var result = &APIReturn[WheelResult[interface{}]]{}
 	args := make(map[string]interface{})
 	args["match"] = match
 	call := WheelCall[interface{}]{"key.accept", args, result}
@@ -29,7 +29,7 @@ func KeyAccept(match string) WheelCall[interface{}] {
 }
 
 func KeyReject(match string) WheelCall[interface{}] {
-	var result = &APIReturnType[WheelResultType[interface{}]]{}
+	var result = &APIReturn[WheelResult[interface{}]]{}
 	args := make(map[string]interface{})
 	args["match"] = match
 	call := WheelCall[interface{}]{"key.reject", args, result}
@@ -37,7 +37,7 @@ func KeyReject(match string) WheelCall[interface{}] {
 }
 
 func KeyDelete(match string) WheelCall[interface{}] {
-	var result = &APIReturnType[WheelResultType[interface{}]]{}
+	var result = &APIReturn[WheelResult[interface{}]]{}
 	args := make(map[string]interface{})
 	args["match"] = match
 	call := WheelCall[interface{}]{"key.delete", args, result}
@@ -45,7 +45,7 @@ func KeyDelete(match string) WheelCall[interface{}] {
 }
 
 func KeyGen(id string) WheelCall[KeyGenResult] {
-	var result = &APIReturnType[WheelResultType[KeyGenResult]]{}
+	var result = &APIReturn[WheelResult[KeyGenResult]]{}
 	args := make(map[string]interface{})
 	args["id_"] = id
 	call := WheelCall[KeyGenResult]{"key.gen", args, result}
@@ -53,7 +53,7 @@ func KeyGen(id string) WheelCall[KeyGenResult] {
 }
 
 func KeyGenAccept(id string, force bool) WheelCall[KeyGenResult] {
-	var result = &APIReturnType[WheelResultType[KeyGenResult]]{}
+	var result = &APIReturn[WheelResult[KeyGenResult]]{}
 	args := make(map[string]interface{})
 	args["id_"] = id
 	args["force"] = force

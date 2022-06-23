@@ -39,6 +39,12 @@ func NewClient(url, username, password, eauth string) SaltClient {
 	}
 }
 
+//TODO to explore:
+// minions endpoint: https://docs.saltproject.io/en/latest/ref/netapi/all/salt.netapi.rest_cherrypy.html#minions
+// event BUS WS: https://docs.saltproject.io/en/latest/ref/netapi/all/salt.netapi.rest_cherrypy.html#ws
+// 		I'm not sure if this is useful. Auth method are different
+
+// Run: more info at:https://docs.saltproject.io/en/latest/ref/netapi/all/salt.netapi.rest_cherrypy.html#run
 func (c *SaltClient) Run(clilentType ClientType, fun string, tgt target.SaltTarget,
 	args []interface{}, kwargs map[string]interface{}) (data *RunResult, err error) {
 

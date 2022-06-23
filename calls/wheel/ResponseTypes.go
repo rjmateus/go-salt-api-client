@@ -1,16 +1,14 @@
 package wheel
 
-type WheelCall[T any] struct {
-	Fun    string
-	Kwargs map[string]interface{}
-	result *APIReturnType[WheelResultType[T]]
-}
+/**
+* Generic wheel response type
+ */
 
-type APIReturnType[R any] struct {
+type APIReturn[R any] struct {
 	Return []R `json:"return"`
 }
 
-type WheelResultType[T any] struct {
+type WheelResult[T any] struct {
 	Tag  string           `json:"tag"`
 	Data WheelDataType[T] `json:"data"`
 }
@@ -22,6 +20,10 @@ type WheelDataType[T any] struct {
 	Stamp  string `json:"_stamp"`
 	Return T      `json:"return"`
 }
+
+/**
+* Key datatype
+ */
 
 type Keys[T any] struct {
 	Minions         T `json:"minions"`
@@ -35,6 +37,10 @@ type KeyGenResult struct {
 	Pub  string
 	Priv string
 }
+
+/**
+* File Root datatype
+ */
 
 type FileRootListRoot struct {
 	Base []map[string]interface{}

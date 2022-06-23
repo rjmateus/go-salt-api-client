@@ -6,7 +6,13 @@ import (
 	"log"
 )
 
-func (w WheelCall[T]) CallSync(saltClient client.SaltClient) WheelResultType[T] {
+type WheelCall[T any] struct {
+	Fun    string
+	Kwargs map[string]interface{}
+	result *APIReturn[WheelResult[T]]
+}
+
+func (w WheelCall[T]) CallSync(saltClient client.SaltClient) WheelResult[T] {
 	data, err := saltClient.Call(w, client.WHEEL, nil)
 	if err != nil {
 		log.Printf("error calling %s-> %s", w.Fun, err)
