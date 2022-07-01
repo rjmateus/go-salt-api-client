@@ -45,3 +45,8 @@ type KeyGenResult struct {
 type FileRootListRoot struct {
 	Base []map[string]interface{}
 }
+
+type WheelAsyncResult struct {
+	Tag string `json:"tag"`
+	Jid string `json:"jid"`
+}

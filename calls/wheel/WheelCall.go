@@ -22,6 +22,18 @@ func (w WheelCall[T]) CallSync(saltClient client.SaltClient) WheelResult[T] {
 	return w.result.Return[0]
 }
 
+func (w WheelCall[T]) CallAsync(saltClient client.SaltClient) *APIReturn[WheelAsyncResult] {
+	data, err := saltClient.Call(w, client.WHEEL_ASYNC, nil)
+	if err != nil {
+		log.Printf("error calling %s-> %s", w.Fun, err)
+	}
+	result := &APIReturn[WheelAsyncResult]{}
+	json.Unmarshal(data, result)
+	// FIXME check data is present before returning it
+	// FIXME should we also expect what is the return type expected?
+	return result
+}
+
 func (w WheelCall[T]) GetPayload() map[string]interface{} {
 	payload := make(map[string]interface{})
 	payload["fun"] = w.Fun

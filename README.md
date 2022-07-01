@@ -1,3 +1,6 @@
+
+![logo](help/GoSaltLogo.png)
+
 # go-salt-api-client
 
 Go implementation of a salt api client.
